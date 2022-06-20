@@ -1,0 +1,19 @@
+<div class="container">
+<div class="profile">
+      <div>
+            <label class="margin" for="searchName"> User Name</label>
+            <input #prof type="text"  name="search"  placeholder="Enter Git User Name"  class="margin">
+           <button class="button btn-primary" (click)="getProfile()"> Search</button>
+        </div>
+
+        <div>
+          <div *ngIf="this.result?.avatar_url" class="alignitems"> <img  src={{this.result?.avatar_url}} height="150px" width="150px"/> </div>
+            <div class="alignitems">{{this.result?.name}}</div>
+            <div class="justifyalign" *ngIf="this.result?.followers">
+                <div class="justify-start"> Followers:{{this.result?.followers}}</div> 
+                <div> Following : {{this.result?.following}}</div>
+             </div>
+             <div class="alignitems red" *ngIf="this.errmsg">{{this.errmsg}}</div>
+        </div>
+</div>
+</div>

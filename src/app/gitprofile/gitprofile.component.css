@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+.margin{
+    margin: 10px;
+}
+.profile{
+    border: 1px solid black;
+    height:50%;
+    width:50% 
+}
+.justifyalign{
+ display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+.justify-start {
+    margin-right: auto;
+  }
+  .alignitems{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin: 5px;
+  }
+  .red{
+    color: red;
+  }
